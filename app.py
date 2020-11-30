@@ -16,12 +16,12 @@ app.config.suppress_callback_exceptions = True
 app.title = 'COVIDTracking Dashboard'
 
 dash_colors = {
-    'background': '#111111',
-    'text': '#BEBEBE',
-    'grid': '#333333',
-    'red': '#BF0000',
-    'blue': '#466fc2',
-    'green': '#5bc246'
+    'background': '#1D3557',
+    'text': '#B6CEC7',
+    'grid': '#7268A6',
+    'red': '#f67e7d',
+    'blue': '#0b032d',
+    'green': '#3CAEA3'
 }
 
 df_worldwide = pd.read_csv('data/df_worldwide.csv')
@@ -380,7 +380,7 @@ def set_countries_value(view, available_options):
     # else:
     #     return ['US', 'Italy', 'United Kingdom', 'Spain', 'France', 'Germany', 'Russia']
     view = 'United States'
-    return ['New York', 'New Jersey', 'California', 'Texas', 'Florida', 'Georgia', 'Arizona', 'North Carolina', 'Colorado']
+    return ['New York', 'California', 'Texas', 'Florida']
 
 @app.callback(
     Output('active_countries', 'figure'),
@@ -593,7 +593,7 @@ def trajectory(view, date_index):
     view = 'United States'
     df = df_us
     scope = 'states'
-    threshold = 10000
+    threshold = 20000
     date = df_worldwide['date'].unique()[date_index]
 
     df = df.groupby(['date', 'Country/Region'],
