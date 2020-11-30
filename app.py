@@ -685,13 +685,25 @@ app.layout = html.Div(style={'backgroundColor': dash_colors['background']}, chil
                 'color': dash_colors['text']
             }
             ),
-    html.H4(children='Tracking cases from Jan., 2020 to Oct., 2020',
+
+    html.H4(children='Tracking cases from Jan to Oct, 2020',
             style={
                 'textAlign': 'center',
                 'color': dash_colors['text']
             }
             ),
+    html.Div([
+        html.A(children="Github Repo",
+               href="https://github.com/salma71/COVID19_tracker",
+               target="_blank",
+               style={'textAlign': 'center',
+                        'color': dash_colors['text'],
+                        'width': '100%',
+                        'float': 'center',
+                        'display': 'inline-block'
+                      })
 
+    ]),
     html.Div(dcc.RadioItems(id='global_format',
                             options=[{'label': i, 'value': i} for i in [
                                 'United States']],
@@ -705,6 +717,7 @@ app.layout = html.Div(style={'backgroundColor': dash_colors['background']}, chil
                                       'display': 'inline-block'
                                       }
              ),
+
 
     html.Div(dcc.Graph(id='confirmed_ind'),
              style={
@@ -847,7 +860,8 @@ app.layout = html.Div(style={'backgroundColor': dash_colors['background']}, chil
             &nbsp;  
             &nbsp;  
             Built by [Salma Elshahawy](https://www.linkedin.com/in/salma-elshahawy/)  
-            Source data: [Johns Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19)  
+            Data Source: [Johns Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19)  
+            GitHub Repo: [GitHub Repo](https://github.com/salma71/COVID19_tracker)
             '''),
              style={
         'textAlign': 'center',
