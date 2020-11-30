@@ -3,25 +3,23 @@
 [Live Demo](https://covid-tracker-states.herokuapp.com/)
 
 ## Introduction
-Covid-19 had changed our personal lives dramatically. One of the significant changes within the lifestyle is the way of how we keep ourselves safe. The Centers for Disease Control and Prevention - CDC had released plenty of hygiene guidelines people should follow to be safe.It also declared that wearing a cloth mask helps decrease the infection chances in the closed areas. Additionally, it said that people with underlying medical complications or fall into specific age categories would be at high risk of contracting the virus. A lot of dat 
-was released per state per zip code areas, counting the number of cases per age category. To keep track of the cases, I decided to create an interactive dashboard tracking the number of cases in the US per zip code.
+COVID19_Tracker is an interactive dashboard build in `python` and `Dash` with charts made with `plotly` to track the covid cases in the United States. The dashboard deployed to `Heroku` Paas platform for easy access and sharing. 
+
 
 ## Installation $ running
 - `git clone` or fork the repo
 - `cd COVID19_tracker` 
 - Activate the virtualenv `source dev/bin/activate`
 - Install the dependencies `python3 pip install -rrequirements.txt upgrade pip`
-- Run the application from the `app.py` entry point
+- Run the application from the `app.py` entry point.
 
-## Project Objectives
-It is hard to navigate to any public news website to know the latest number of confirmed cases in a specif state. For that purpose, an interactive dashboard would be a good alternative, where it is easy to read without reading in long articles.
-
-## Dashboard Features
+## Dashboard Main Features
 To design a well communicative dashboard, we need to identify the major features we may include. Some of the preliminary features would be:
-1. Header, footer, and body.
-2. The number of confirmed cases, deaths, and recovered.
-3. An interactive map showing the confirmed cases per state.
-4. A list of the states with their updated number of fatalities.
+1. Indicators 
+2. The infections rate for selected region.
+3. Case analysis by sub-region
+4. Infection map
+5. The trajectory chart 
 
 ## The data source used for that project
 For this project, I would rely on the data that most news used from the [Johns Hopkins University Center for Systems Science and Engineering](https://github.com/CSSEGISandData/COVID-19). I intend to use the [COVIDTracking](https://covidtracking.com/) repository, where it has the features I need to build the dashboard. 

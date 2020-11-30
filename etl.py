@@ -10,6 +10,9 @@ import sys
 
 
 def save_from_web(url):
+    '''
+    fetching data from the Johns Hopkins public repo and save it as a csv file
+    '''
     url = r'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/{}'.format(
         url)
     raw_string = requests.get(url).content
@@ -17,6 +20,10 @@ def save_from_web(url):
 
 
 def load_time_series(source='web', update='manual'):
+    '''
+    fetch # of cases as time series then save it in the data/raw folder
+    to use it for building the indicators components.
+    '''
     if source == 'web':
         today = date.today()
         prepend = r'csse_covid_19_time_series/time_series_covid19_'
