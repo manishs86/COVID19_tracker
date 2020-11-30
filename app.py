@@ -15,6 +15,7 @@ server = app.server
 app.config.suppress_callback_exceptions = True
 app.title = 'COVIDTracking Dashboard'
 
+
 dash_colors = {
     'background': '#1D3557',
     'text': '#B6CEC7',
@@ -679,6 +680,12 @@ def trajectory(view, date_index):
 
 app.layout = html.Div(style={'backgroundColor': dash_colors['background']}, children=[
     html.H1(children='COVIDTracking Dashboard',
+            style={
+                'textAlign': 'center',
+                'color': dash_colors['text']
+            }
+            ),
+    html.H4(children='Tracking cases from Jan., 2020 to Oct., 2020',
             style={
                 'textAlign': 'center',
                 'color': dash_colors['text']
