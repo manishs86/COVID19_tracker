@@ -1,7 +1,7 @@
-## Introcution 
+## Introduction 
 COVID19_Tracker is an interactive dashboard build in `python` and `Dash` with charts made with `plotly` to track the covid cases in the United States. The dashboard deployed to `Heroku` Paas platform for easy access and sharing. 
 
-## Installation $ running
+## Installation & running
 - `git clone` or fork the repo
 - `cd COVID19_tracker` 
 - Activate the virtualenv `source dev/bin/activate`
@@ -12,6 +12,9 @@ COVID19_Tracker is an interactive dashboard build in `python` and `Dash` with ch
 Covid had changed our personal lives dramatically. One of the significant changes within the lifestyle is the way of how we keep ourselves safe. So, it become essential to track the spread of the virus across the nation. From this aspect, it is important to compare the upto date numbers with the previous day to correctly judge the situation. Additionally, it would be good to see which state across the nation has a good control over the virus spread by looking over the trajectory chart. 
 
 > The dashboard visualize the data from Jan to October, 2020 cases for short computation time. 
+
+## Live Demo
+[Live Demo](https://covid-tracker-states.herokuapp.com/)
 
 ## Main Features
 The dashboard has 5 main componets:
