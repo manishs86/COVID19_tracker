@@ -693,8 +693,8 @@ app.layout = html.Div(style={'backgroundColor': dash_colors['background']}, chil
             }
             ),
     html.Div([
-        html.A(children="Github Repo",
-               href="https://github.com/salma71/COVID19_tracker",
+        html.A(children="About this dashboard",
+               href="https://github.com/salma71/COVID19_tracker/blob/master/conclusion.md",
                target="_blank",
                style={'textAlign': 'center',
                         'color': dash_colors['text'],
@@ -781,7 +781,7 @@ app.layout = html.Div(style={'backgroundColor': dash_colors['background']}, chil
                                    })
              ),
 
-    html.Div(  # worldwide_trend and active_countries
+    html.Div( 
         [
             html.Div(
                 dcc.Graph(id='worldwide_trend'),
